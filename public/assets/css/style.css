@@ -1,0 +1,506 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color:#1A1A1A;
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    /* transform-style: preserve-3d; */
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* CSS MENU GENERIC */
+
+.headerGeneric {
+    box-sizing: border-box;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 220;
+}
+
+#btn-menu {
+    width: 20px;
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menuDepliant {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    z-index: 102;
+    background-color: #1A1A1A;
+    display: none;
+}
+
+.menuDepliant ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuDepliant ul li {
+    border-bottom: 1px solid #00FFFF;
+    padding: 10px;
+}
+
+.menuDepliant ul li a {
+    text-decoration: none;
+    color: #00FFFF;
+}
+
+#btn-fermer {
+    width: 20px;
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* CSS SECTION ABOUT ME */
+
+.about {
+    background-image: url('../images/montaje_foto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.about h3 {
+    padding: 200px 25px 0;
+    margin: 0;
+    font-size: 1.5em;
+    color: #00FFFF;
+}
+
+.about p {
+    font-size: .6em;
+    line-height: 20px;
+    padding: 0 40px 40px;
+    margin: 0;
+}
+
+/* CSS NAV*/
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 98;
+}
+
+nav p {
+    margin: 0;
+    transform: rotate(270deg);
+    width: fit-content;
+    font-size: .5em;
+    position: absolute;
+    padding: 0;
+    top: 40px;
+    color: #00FFFF;
+    cursor: pointer;
+}
+
+.logos {
+    width: 70px;
+    max-width: 100px;
+    height: fit-content;
+    float: right;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    margin: 0;
+    padding: 3px;
+}
+
+.logos a img {
+    width: 100%;
+}
+
+.logos a:hover {
+    box-shadow: 0 1px 10px 0 #00FFFF inset, 0 1px 10px 0 #00FFFF,
+                0 1px 10px 0 #00FFFF inset, 0 1px 10px 0 #00FFFF;
+}
+.logos a:active {
+    box-shadow: 0 1px 10px 0 #00FFFF inset, 0 1px 10px 0 #00FFFF,
+                0 1px 10px 0 #00FFFF inset, 0 1px 10px 0 #00FFFF;
+}
+
+/* CSS HEADER */
+
+header {
+    text-align: center;
+    content: "";
+/*     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0; */
+    display: block;
+    background: url('../images/photo_fond.jpg');
+    background-size: cover;
+    transform-origin: center center 0;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale(2);
+    min-height: 100vh;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+header p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .7em;
+    font-weight: lighter;
+    width: fit-content;
+}
+
+span {
+    font-weight: bolder;
+    color: #6d6e70;
+}
+
+header a {
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    z-index: 101;
+}
+
+header a img {
+    width: 80%;
+}
+
+.textureCode {
+    width: 100%;
+    position: absolute;
+    top: 70vh;
+}
+
+.code img {
+    width: 200%;
+}
+
+/* SECTION MENU ACCUEIL */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu a {
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    border-bottom: 1px solid #00FFFF;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A1A1A;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+}
+
+.menu a p {
+    color: #00FFFF;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.menu a img {
+    height: 70%;
+    transform: rotate(270deg);
+    padding-right: 10px;
+}
+
+/* CSS SECTION INFOS */
+
+h3 {
+    margin: 0;
+    padding: 80px 0 0;
+    text-align: center;
+    color: #00FFFF;
+}
+
+.savoirs {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #1A1A1A;
+    min-height: 100vh;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.savoirs .card {
+    position: relative;
+    height: 240px;
+    margin: 10px 0;
+}
+
+.savoirs .card .face {
+    width: 200px;
+    height: 150px;
+    transition: 0.5s;
+}
+
+.savoirs .card .face.face1 {
+    position: relative;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.savoirs .card:hover .face.face1 {
+    transform: translateY(0);
+    background-color: #00FFFF;
+}
+
+.savoirs .card .face.face1 .content {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.savoirs .card .face.face1 .content img {
+    max-width: 100px;
+    margin: auto;
+    display: block;
+}
+
+.savoirs .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #6d6e70;
+    text-align: center;
+    font-size: 1em;
+}
+
+.savoirs .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.savoirs .card .face.face2 {
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-50px);
+}
+
+.savoirs .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.savoirs .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+/*  SECTION LOGOS DEV */
+
+.logosDev {
+    width: 100%;
+    background-image: url('../svg/code_noir.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-color: #1A1A1A;
+}
+
+.logosDev .mesLogos {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.logosDev .mesLogos img {
+    width: 20%;
+    padding: 10px;
+    min-height: 20px;
+}
+
+/* CSS SECTION REALISATIONS */
+
+#realisations {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.container {
+    z-index: 5;
+    /* position: absolute; */
+    top: 150vh;
+    background: black;
+    line-height: 30px;
+    font-weight: lighter;
+    color: grey;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    color: #1A1A1A;
+    width: fit-content;
+}
+
+h2:hover {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF,
+                 0 0 20px #00FFFF,
+                 0 0 40px #00FFFF,
+                 0 0 80px #00FFFF,
+                 0 0 120px #00FFFF,
+                 0 0 160px #00FFFF;
+}
+
+#mesprojets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projets {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 10px;
+}
+
+.projets img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.projets:hover img {
+    opacity: 0.2;
+}
+
+#mesBoutons {
+    display: flex;
+    justify-content: space-around;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 150px;
+}
+
+#mesBoutons:hover {
+    opacity: 1;
+}
+
+.bouton {
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+#mesBoutons img {
+    width: 100%;
+    opacity: 1;
+}
+
+/*  CSS FOOTER */
+
+footer {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.monBouton {
+    width: auto;
+    height: auto;
+    padding: 9px;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    border: 1px solid #00FFFF;
+    cursor: pointer;
+    margin: 10px 0;
+    color: #00FFFF;
+    font-size: .6em;
+    /* transition: 1.5s; */
+}
+
+.monBouton:hover {
+    box-shadow: 0 1px 10px 0 #00FFFF inset, 0 1px 10px 0 #00FFFF,
+                0 1px 10px 0 #00FFFF inset, 0 1px 10px 0 #00FFFF;
+    text-shadow: 0 0 1px #00FFFF, 0 0 1px #00FFFF;
+}
+.monBouton:active {
+    box-shadow: 0 1px 10px 0 #00FFFF inset, 0 1px 10px 0 #00FFFF,
+                0 1px 10px 0 #00FFFF inset, 0 1px 10px 0 #00FFFF;
+    text-shadow: 0 0 1px #00FFFF, 0 0 1px #00FFFF;
+}
+
+
