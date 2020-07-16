@@ -25,58 +25,50 @@
             <div id="mesprojets">
                 <div class="projets">
                     <img src="assets/images/hellocolis.jpg" alt="hellocolis"/>
-                    <div id="mesBoutons">
-                        <a href="" class="bouton"><img src="assets/svg/icon_git.svg"/></a>
-                        <a href="" class="bouton"><img src="assets/svg/icon_design.svg"/></a>
+                    <div class="mesBoutons">
+                        <a href="" class="bouton">Voir projet</a>
                     </div>
                 </div>
                 <div class="projets">
                     <img src="assets/images/martseille.jpg" alt="martseille" class="monImage"/>
-                    <div id="mesBoutons">
-                        <a href="" class="bouton"><img src="assets/svg/icon_git.svg"/></a>
-                        <a href="" class="bouton"><img src="assets/svg/icon_design.svg"/></a>
+                    <div class="mesBoutons">
+                        <a href="" class="bouton">Voir projet</a>
                     </div>
                 </div>
                 <div class="projets">
                     <img src="assets/images/grossnounours.jpg" alt="grossnounours"/>
-                    <div id="mesBoutons">
-                        <a href="" class="bouton"><img src="assets/svg/icon_git.svg"/></a>
-                        <a href="" class="bouton"><img src="assets/svg/icon_design.svg"/></a>
+                    <div class="mesBoutons">
+                        <a href="" class="bouton">Voir projet</a>
                     </div>
                 </div>
                 <div class="projets">
                     <img src="assets/images/snack.jpg" alt="snack"/>
-                    <div id="mesBoutons">
-                        <a href="" class="bouton"><img src="assets/svg/icon_git.svg"/></a>
-                        <a href="" class="bouton"><img src="assets/svg/icon_design.svg"/></a>
+                    <div class="mesBoutons">
+                        <a href="" class="bouton">Voir projet</a>
                     </div>
                 </div>
                 <div class="projets">
                     <img src="assets/images/treize.jpg" alt="treize espace coworking"/>
-                    <div id="mesBoutons">
-                        <a href="" class="bouton"><img src="assets/svg/icon_git.svg"/></a>
-                        <a href="" class="bouton"><img src="assets/svg/icon_design.svg"/></a>
+                    <div class="mesBoutons">
+                        <a href="" class="bouton">Voir projet</a>
                     </div>
                 </div>
                 <div class="projets">
                     <img src="assets/images/garage.jpg" alt="garage casablanca"/>
-                    <div id="mesBoutons">
-                        <a href="" class="bouton"><img src="assets/svg/icon_git.svg"/></a>
-                        <a href="" class="bouton"><img src="assets/svg/icon_design.svg"/></a>
+                    <div class="mesBoutons">
+                        <a href="" class="bouton">Voir projet</a>
                     </div>
                 </div>
                 <div class="projets">
                     <img src="assets/images/traces.jpg" alt="traces d'animal"/>
-                    <div id="mesBoutons">
-                        <a href="" class="bouton"><img src="assets/svg/icon_git.svg"/></a>
-                        <a href="" class="bouton"><img src="assets/svg/icon_design.svg"/></a>
+                    <div class="mesBoutons">
+                        <a href="" class="bouton">Voir projet</a>
                     </div>
                 </div>
                 <div class="projets">
                     <img src="assets/images/agenda.jpg" alt="agenda scolaire"/>
-                    <div id="mesBoutons">
-                        <a href="" class="bouton"><img src="assets/svg/icon_git.svg"/></a>
-                        <a href="" class="bouton"><img src="assets/svg/icon_design.svg"/></a>
+                    <div class="mesBoutons">
+                        <a href="" class="bouton">Voir projet</a>
                     </div>
                 </div>
             </div>

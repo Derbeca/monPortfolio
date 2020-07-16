@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-        <h3>+ Infos</h3>
+        <h2>+ Infos</h2>
         <section class="savoirs">
             <div class="card">
                 <div class="face face1">
