@@ -21,12 +21,13 @@
             </div>
         </div>
         <section class="contact">
-            <form method="POST" action="">
+            <form method="POST" action="contact/store">
                 <h2>Me contacter</h2>
                 <input type="text" name="nom" placeholder="entrez votre nom">
-                <input type="mail" name="mail" placeholder="entrez votre adresse email">
+                <input type="mail" name="email" placeholder="entrez votre adresse email">
                 <textarea name="message" placeholder="entrez votre message"></textarea>
                 <button type="submit">Envoyer</button>
+                @csrf
             </form>
         </section>
         <script src="<?php echo url('/assets/js/main.js') ?>"></script>

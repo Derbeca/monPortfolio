@@ -26,3 +26,5 @@ Route::view('/infos', 'infos');
 Route::view('/projets', 'projets');
 
 Route::view('/contact', 'contact');
+
+Route::any('/contact/store', 'ContactController@store');
