@@ -28,3 +28,9 @@ Route::view('/projets', 'projets');
 Route::view('/contact', 'contact');
 
 Route::any('/contact/store', 'ContactController@store');
+
+Route::view('/espace-admin', 'espace-admin');
+
+Route::any('/projet/store', 'ProjetController@store');
+
+Route::any('/projet/supprimer', 'ProjetController@supprimer');

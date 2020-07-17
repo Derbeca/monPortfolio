@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-        <section class="contact">
+        <section class="formulaire">
             <form method="POST" action="contact/store">
                 <h2>Me contacter</h2>
                 <input type="text" name="nom" placeholder="entrez votre nom">
