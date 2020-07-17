@@ -20,14 +20,14 @@
                 </ul>
             </div>
         </div>
-        <section class="about">
-            <h3>Salut !</h3>
-            <p class="textAbout">
-            Je suis Rebeca Gruber. Je suis développeuse web, graphiste et illustratrice. Passioné du design et de la programmation, je travail actuellement comme freelance. 
-            <br>Spécialisé dans le développement Front-end et Back-end, j’assure la conception graphique, technique et fonctionnelle de votre projet.
-            <br>Je m'intéresse de près à chacun de vos projets et je m'implique dans chacun d'eux comme si c'était le mien.
-            Je vous réalise des créations et des solutions 100% sur-mesure.
-            </p>
+        <section class="contact">
+            <form method="POST" action="">
+                <h2>Me contacter</h2>
+                <input type="text" name="nom" placeholder="entrez votre nom">
+                <input type="mail" name="mail" placeholder="entrez votre adresse email">
+                <textarea name="message" placeholder="entrez votre message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
         <script src="<?php echo url('/assets/js/main.js') ?>"></script>
     </body>

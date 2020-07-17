@@ -9,9 +9,9 @@
     </head>
     <body>
         <div class="headerGeneric">
-            <img src="assets/svg/icon-menu.svg" alt="icône menu" id="btn-menu">
+            <img src="assets/svg/icon-menu.svg" alt="icône menu" id="btnMenu">
             <div class="menuDepliant">
-                <img src="assets/svg/icon-fermer.svg" alt="icône fermer" id="btn-fermer">
+                <img src="assets/svg/icon-fermer.svg" alt="icône fermer" id="btnFermer">
                 <ul>
                     <li><a href="<?php echo url('/about') ?>">À propos</a></li>
                     <li><a href="<?php echo url('/infos') ?>">Infos</a></li>
@@ -86,5 +86,6 @@
                 <img src="assets/svg/code_verticale.svg" alt="dessin code">
             </div> -->
         </section>
+        <script src="<?php echo url('/assets/js/main.js') ?>"></script>
     </body>
 </html>
