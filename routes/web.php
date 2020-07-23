@@ -34,3 +34,5 @@ Route::view('/espace-admin', 'espace-admin');
 Route::any('/projet/store', 'ProjetController@store');
 
 Route::any('/projet/supprimer', 'ProjetController@supprimer');
+
+Route::any('/projet/modifier', 'ProjetController@modifier');

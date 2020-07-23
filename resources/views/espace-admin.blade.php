@@ -27,6 +27,34 @@
                     @csrf
                 </form>
             </section>
+            <section class="lightbox" v-if="annonceUpdate">
+                <div @click="annonceUpdate = null"><img src="../public/assets/svg/icon-fermer.svg" class="logoFermer"></div>
+                <h3>MODIFIER UNE PHOTO</h3>
+                <!-- CONVENTION LARAVEL POUR LE CREATE action="annonce/store" -->
+                <!-- https://fr.vuejs.org/v2/guide/forms.html -->
+                <form @submit.prevent="envoyerFormAjax" method="POST" action="projet/modifier" enctype="multipart/form-data">
+                    <input type="text" v-model="annonceUpdate.titre" name="titre" placeholder="entrez le titre">
+                    <textarea name="contenu" v-model="annonceUpdate.contenu" placeholder="entrez le contenu"></textarea>
+                    <input type="file" name="photo1" placeholder="choisissez votre photo1">
+                    <img :src="annonceUpdate.photo1">
+                    <input type="file" name="photo2" placeholder="choisissez votre photo2">
+                    <img :src="annonceUpdate.photo2">
+                    <input type="file" name="photo3" placeholder="choisissez votre photo3">
+                    <img :src="annonceUpdate.photo3">
+                    <input type="file" name="photo4" placeholder="choisissez votre photo4">
+                    <img :src="annonceUpdate.photo4">
+                   
+                    </select>
+                    <button type="submit">MODIFIER</button>
+                    <!-- ON UTILISE id POUR SELECTIONNER LA BONNE LIGNE SQL -->
+                    <input type="text" name="id"  v-model="annonceUpdate.id">
+                    <div class="confirmation">
+                    @{{ confirmation }}
+                    </div>
+                    <!-- RACCOURCI BLADE POUR AJOUTER UN CHAMP HIDDEN -->
+                    @csrf
+                </form>
+            </section>
             <!-- AFFICHER LA LISTE D'ANNONCES-->
             <section>
                 <h2>Liste de mes projets</h2>
@@ -35,12 +63,13 @@
                         <div id="contenu">
                             <h4>@{{ annonce.titre }}</h4>
                             <p>@{{ annonce.contenu }}</p>
+                            <p>@{{ annonce.id }}</p>
                         </div>
                         <img :src="annonce.photo1">
                         <div id="btns">
-                            <button @click.prevent="modifierAnnonce(annonce)"><img src="../public/assets/svg/icon-fermer.svg" alt="bouton modifier" title="modifier"></button>
+                            <button @click.prevent="modifierAnnonce(annonce)">modifier</button>
                             <!-- COOL: AVEC VUEJS JE PEUX PASSER annonce COMME SI C'ETAIT UNE VARIABLE JS-->
-                            <button @click.prevent="supprimerAnnonce(annonce)"><img src="../public/assets/svg/icon-fermer.svg" alt="bouton supprimer" title="supprimer"></button>
+                            <button @click.prevent="supprimerAnnonce(annonce)">supprimer</button>
                         </div>
                     </article>
                 </div>
@@ -56,7 +85,6 @@ var app = new Vue({
   mounted: function () {
       // SIMULE UNE FAUSSE SUPPRESSION
       // BRICOLAGE POUR OBTENIR L'AFFICHAGE
-
       this.supprimerAnnonce({ id: -1});
   },
   methods: {
@@ -66,7 +94,6 @@ var app = new Vue({
         // JE MEMORISE L'ANNONCE A MODIFIER DANS UNE VARIABLE VUEJS
         this.annonceUpdate = annonce;
       },
-    
       supprimerAnnonce: function (annonce) {
         // debug
         console.log(annonce);
@@ -130,10 +157,10 @@ var app = new Vue({
   },
   data: {
       // ICI JE RAJOUTE LES VARIABLES GEREES PAR VUEJS
-    annonceUpdate: null, 
+    annonceUpdate: null,  
     annonces: [],
-    confirmation: '',  
-    error: '',
+    confirmation: 'ici on verra le message de confirmation',  
+    message: 'Hello Vue !'
   }
 });
     </script>
