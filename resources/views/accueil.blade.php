@@ -19,17 +19,17 @@
                 <span>GRUBER</span>
             </h1>
             <p>développeuse web
-                <br>graphiste - illustratrice
+                <br>graphiste
             </p>
             <a href="">
                 <img src="assets/svg/icon_fleche_bleu.svg" alt="icône flèche" id="fleche">
             </a>
         </header>
-        <div class="textureCode">
+<!--         <div class="textureCode">
             <div class="code">
                 <img src="assets/svg/code.svg" alt="dessin code">
             </div>
-        </div>
+        </div> -->
         <section class="menu">
             <a href="<?php echo url('/about') ?>">
                 <p>About me</p>

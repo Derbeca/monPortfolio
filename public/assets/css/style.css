@@ -159,10 +159,11 @@ header {
     right: 0; 
     bottom: 0; */
     display: block;
-    background: url('../images/photo_fond.jpg');
+    background: url('../images/tecla-libro.jpg');
     background-size: cover;
     transform-origin: center center 0;
     background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
     transform: translateZ(-1px) scale(2);
     min-height: 100vh;
@@ -171,7 +172,7 @@ header {
 header h1 {
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5em;
@@ -181,23 +182,23 @@ header h1 {
 header p {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: .7em;
-    font-weight: lighter;
+    font-size: .8em;
     width: fit-content;
+    color: black;
 }
 
 span {
     font-weight: bolder;
-    color: #6d6e70;
+    color: #00FFFF;
 }
 
 header a {
     position: absolute;
-    top: 55%;
-    left: 48%;
+    bottom: 5%;
+    left: 47%;
     z-index: 101;
 }
 
