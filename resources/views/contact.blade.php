@@ -13,6 +13,7 @@
             <div class="menuDepliant">
                 <img src="assets/svg/icon-fermer.svg" alt="icône fermer" id="btnFermer">
                 <ul>
+                    <li><a href="<?php echo url('/') ?>">Accueil</a></li>
                     <li><a href="<?php echo url('/about') ?>">À propos</a></li>
                     <li><a href="<?php echo url('/infos') ?>">Infos</a></li>
                     <li><a href="<?php echo url('/projets') ?>">Projets</a></li>

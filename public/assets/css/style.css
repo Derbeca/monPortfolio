@@ -91,7 +91,7 @@ body {
 .about p {
     font-size: .6em;
     line-height: 20px;
-    padding: 0 40px 40px;
+    padding: 0 40px;
     margin: 0;
 }
 
@@ -186,6 +186,7 @@ header p {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: .8em;
+    font-weight: bolder;
     width: fit-content;
     color: black;
 }
@@ -197,7 +198,7 @@ span {
 
 header a {
     position: absolute;
-    bottom: 5%;
+    top: 50%;
     left: 47%;
     z-index: 101;
 }
@@ -229,7 +230,7 @@ header a img {
     border-bottom: 1px solid #00FFFF;
     display: flex;
     justify-content: space-between;
-    background-color: #1A1A1A;
+    background-color: transparent;
     z-index: 100;
     box-sizing: border-box;
     padding: 10px;
@@ -404,7 +405,7 @@ h2 {
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: black;
+    background-color: white;
     margin: 10px;
 }
 
@@ -427,16 +428,16 @@ h2 {
     left: 25%;
     text-align: center;
     width: 100px;
-    background-color: #00FFFF;
+    background-color: #1A1A1A ;
     padding: 0 0 3px;
 }
 
 .mesBoutons:hover {
-    background-color: #1A1A1A;
+    background-color: #00FFFF;
 }
 
 .bouton {
-    color: #1A1A1A;
+    color: #00FFFF;
     text-align: center;
     font-size: 12px;
     text-decoration: none;
@@ -445,7 +446,7 @@ h2 {
 }
 
 .bouton:hover {
-    color: #00FFFF;
+    color: #1A1A1A;
 }
 
 /*  CSS SECTION CONTACT */
